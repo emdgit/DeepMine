@@ -15,8 +15,8 @@ Resources:
   - { id: 12, name: Amethyst }
   - { id: 13, name: Diamond }
 
-# 1 - 7, 
-# Checked: 1 - 7, 
+# 1 - 7, 10, 11, 
+# Extra Checked: 1 - 11, 24 - 25, 36 - 39, 43 - 44, 49 - 52, 55, 57 - 62
 
 Locations:
 
@@ -61,18 +61,12 @@ Locations:
     Extra: [ 4, 7 ]
   - location:
     number: 7
-    Partitions:
+    Partitions: 
       - { ResourceId: 2, Prob: 45 }
       - { ResourceId: 1, Prob: 38 }
       - { ResourceId: 3, Prob: 13 }
       - { ResourceId: 0, Prob: 3 }
-  - location:
-    number: 7
-    Partitions:
-      - { ResourceId: 2, Prob: 45 }
-      - { ResourceId: 1, Prob: 38 }
-      - { ResourceId: 3, Prob: 13 }
-      - { ResourceId: 0, Prob: 3 }
+    Extra: [ 4 ]
   - location:
     number: 8
     Partitions:
@@ -80,283 +74,410 @@ Locations:
       - { ResourceId: 1, Prob: 33 }
       - { ResourceId: 3, Prob: 14 }
       - { ResourceId: 0, Prob: 3 }
-  
+    Extra: [ 4, 7 ]
   - location:
     number: 9
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 2, Prob: 53 }
+      - { ResourceId: 1, Prob: 27 }
+      - { ResourceId: 3, Prob: 15 }
+      - { ResourceId: 0, Prob: 3 }
+    Extra: [ 7 ]
   - location:
-    number: 1
+    number: 10
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 2, Prob: 57 }
+      - { ResourceId: 1, Prob: 22 }
+      - { ResourceId: 3, Prob: 16 }
+      - { ResourceId: 0, Prob: 3 }
+    Extra: [ 7 ]
   - location:
-    number: 1
+    number: 11
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 2, Prob: 61 }
+      - { ResourceId: 3, Prob: 17 }
+      - { ResourceId: 1, Prob: 17 }
+      - { ResourceId: 0, Prob: 3 }
+    Extra: [ 7 ]
   - location:
-    number: 1
+    number: 12
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 2, Prob: 65 }
+      - { ResourceId: 3, Prob: 18 }
+      - { ResourceId: 1, Prob: 12 }
+      - { ResourceId: 0, Prob: 3 }
+    Extra: [  ]
   - location:
-    number: 1
+    number: 13
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 2, Prob: 100 }
   - location:
-    number: 1
+    number: 14
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 2, Prob: 70 }
+      - { ResourceId: 3, Prob: 30 }
   - location:
-    number: 1
+    number: 15
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 2, Prob: 58 }
+      - { ResourceId: 3, Prob: 19 }
+      - { ResourceId: 0, Prob: 22 }
   - location:
-    number: 1
+    number: 16
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 2, Prob: 52 }
+      - { ResourceId: 3, Prob: 19 }
+      - { ResourceId: 4, Prob: 15 }
+      - { ResourceId: 0, Prob: 13 }
   - location:
-    number: 1
+    number: 17
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 2, Prob: 46 }
+      - { ResourceId: 4, Prob: 20 }
+      - { ResourceId: 3, Prob: 19 }
+      - { ResourceId: 0, Prob: 14 }
   - location:
-    number: 1
+    number: 18
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 2, Prob: 40 }
+      - { ResourceId: 4, Prob: 25 }
+      - { ResourceId: 3, Prob: 18 }
+      - { ResourceId: 0, Prob: 15 }
   - location:
-    number: 1
+    number: 19
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 2, Prob: 35 }
+      - { ResourceId: 4, Prob: 30 }
+      - { ResourceId: 3, Prob: 18 }
+      - { ResourceId: 0, Prob: 17 }
   - location:
-    number: 1
+    number: 20
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 4, Prob: 35 }
+      - { ResourceId: 2, Prob: 29 }
+      - { ResourceId: 3, Prob: 18 }
+      - { ResourceId: 5, Prob: 11 }
+      - { ResourceId: 0, Prob: 6 }
   - location:
-    number: 1
+    number: 21
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 4, Prob: 40 }
+      - { ResourceId: 2, Prob: 23 }
+      - { ResourceId: 3, Prob: 18 }
+      - { ResourceId: 5, Prob: 13 }
+      - { ResourceId: 0, Prob: 5 }
   - location:
-    number: 1
+    number: 22
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 4, Prob: 45 }
+      - { ResourceId: 3, Prob: 17 }
+      - { ResourceId: 2, Prob: 17 }
+      - { ResourceId: 5, Prob: 15 }
+      - { ResourceId: 0, Prob: 5 }
   - location:
-    number: 1
+    number: 23
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 4, Prob: 50 }
+      - { ResourceId: 3, Prob: 17 }
+      - { ResourceId: 5, Prob: 16 }
+      - { ResourceId: 2, Prob: 11 }
+      - { ResourceId: 0, Prob: 4 }
   - location:
-    number: 1
+    number: 24
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 4, Prob: 55 }
+      - { ResourceId: 5, Prob: 18 }
+      - { ResourceId: 3, Prob: 17 }
+      - { ResourceId: 0, Prob: 9 }
+    Extra: [ 2, 6, 7 ]
   - location:
-    number: 1
+    number: 25
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 4, Prob: 100 }
   - location:
-    number: 1
+    number: 26
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 4, Prob: 70 }
+      - { ResourceId: 5, Prob: 30 }
   - location:
-    number: 1
+    number: 27
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 4, Prob: 50 }
+      - { ResourceId: 5, Prob: 26 }
+      - { ResourceId: 3, Prob: 19 }
+      - { ResourceId: 0, Prob: 4 }
   - location:
-    number: 1
+    number: 28
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 4, Prob: 45 }
+      - { ResourceId: 5, Prob: 30 }
+      - { ResourceId: 3, Prob: 20 }
+      - { ResourceId: 0, Prob: 5 }
   - location:
-    number: 1
+    number: 29
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 4, Prob: 40 }
+      - { ResourceId: 5, Prob: 33 }
+      - { ResourceId: 3, Prob: 21 }
+      - { ResourceId: 0, Prob: 5 }
   - location:
-    number: 1
+    number: 30
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 36 }
+      - { ResourceId: 4, Prob: 35 }
+      - { ResourceId: 3, Prob: 22 }
+      - { ResourceId: 0, Prob: 6 }
   - location:
-    number: 1
+    number: 31
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 40 }
+      - { ResourceId: 4, Prob: 30 }
+      - { ResourceId: 3, Prob: 23 }
+      - { ResourceId: 0, Prob: 6 }
   - location:
-    number: 1
+    number: 32
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 43 }
+      - { ResourceId: 4, Prob: 25 }
+      - { ResourceId: 3, Prob: 24 }
+      - { ResourceId: 0, Prob: 7 }
   - location:
-    number: 1
+    number: 33
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 46 }
+      - { ResourceId: 3, Prob: 25 }
+      - { ResourceId: 4, Prob: 19 }
+      - { ResourceId: 0, Prob: 8 }
   - location:
-    number: 1
+    number: 34
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 50 }
+      - { ResourceId: 3, Prob: 26 }
+      - { ResourceId: 4, Prob: 15 }
+      - { ResourceId: 0, Prob: 8 }
   - location:
-    number: 1
+    number: 35
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 53 }
+      - { ResourceId: 3, Prob: 27 }
+      - { ResourceId: 0, Prob: 19 }
   - location:
-    number: 1
+    number: 36
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 56 }
+      - { ResourceId: 3, Prob: 28 }
+      - { ResourceId: 0, Prob: 14 }
+    Extra: [ 4, 6 ]
   - location:
-    number: 1
+    number: 37
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 100 }
   - location:
-    number: 1
+    number: 38
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 70 }
+      - { ResourceId: 3, Prob: 30 }
   - location:
-    number: 1
+    number: 39
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 50 }
+      - { ResourceId: 3, Prob: 25 }
+      - { ResourceId: 6, Prob: 11 }
+      - { ResourceId: 0, Prob: 14 }
+    Extra: [ 7, 8 ]
   - location:
-    number: 1
+    number: 40
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 45 }
+      - { ResourceId: 3, Prob: 22 }
+      - { ResourceId: 7, Prob: 15 }
+      - { ResourceId: 6, Prob: 11 }
+      - { ResourceId: 0, Prob: 6 }
   - location:
-    number: 1
+    number: 41
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 40 }
+      - { ResourceId: 7, Prob: 20 }
+      - { ResourceId: 3, Prob: 20 }
+      - { ResourceId: 6, Prob: 12 }
+      - { ResourceId: 0, Prob: 8 }
   - location:
-    number: 1
+    number: 42
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 5, Prob: 35 }
+      - { ResourceId: 7, Prob: 25 }
+      - { ResourceId: 3, Prob: 17 }
+      - { ResourceId: 6, Prob: 12 }
+      - { ResourceId: 0, Prob: 10 }
   - location:
-    number: 1
+    number: 43
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 7, Prob: 30 }
+      - { ResourceId: 5, Prob: 30 }
+      - { ResourceId: 3, Prob: 15 }
+      - { ResourceId: 6, Prob: 13 }
+      - { ResourceId: 8, Prob: 11 }
   - location:
-    number: 1
+    number: 44
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 7, Prob: 35 }
+      - { ResourceId: 5, Prob: 25 }
+      - { ResourceId: 6, Prob: 14 }
+      - { ResourceId: 8, Prob: 13 }
+      - { ResourceId: 3, Prob: 12 }
   - location:
-    number: 1
+    number: 45
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 7, Prob: 40 }
+      - { ResourceId: 5, Prob: 19 }
+      - { ResourceId: 8, Prob: 15 }
+      - { ResourceId: 6, Prob: 14 }
+      - { ResourceId: 0, Prob: 10 }
   - location:
-    number: 1
+    number: 46
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 7, Prob: 45 }
+      - { ResourceId: 8, Prob: 17 }
+      - { ResourceId: 6, Prob: 15 }
+      - { ResourceId: 5, Prob: 15 }
+      - { ResourceId: 0, Prob: 8 }
   - location:
-    number: 1
+    number: 47
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 7, Prob: 50 }
+      - { ResourceId: 8, Prob: 19 }
+      - { ResourceId: 6, Prob: 15 }
+      - { ResourceId: 0, Prob: 15 }
   - location:
-    number: 1
+    number: 48
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 7, Prob: 55 }
+      - { ResourceId: 8, Prob: 21 }
+      - { ResourceId: 6, Prob: 16 }
+      - { ResourceId: 0, Prob: 8 }
   - location:
-    number: 1
+    number: 49
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 7, Prob: 100 }
   - location:
-    number: 1
+    number: 50
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 7, Prob: 70 }
+      - { ResourceId: 8, Prob: 30 }
   - location:
-    number: 1
+    number: 51
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 7, Prob: 50 }
+      - { ResourceId: 8, Prob: 25 }
+      - { ResourceId: 6, Prob: 14 }
+      - { ResourceId: 0, Prob: 10 }
+    Extra: [ 9, 10, 13 ]
   - location:
-    number: 1
+    number: 52
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 7, Prob: 45 }
+      - { ResourceId: 8, Prob: 27 }
+      - { ResourceId: 6, Prob: 12 }
+      - { ResourceId: 0, Prob: 15 }
+    Extra: [ 10, 13, 9 ]
   - location:
-    number: 1
+    number: 53
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 7, Prob: 40 }
+      - { ResourceId: 8, Prob: 28 }
+      - { ResourceId: 6, Prob: 11 }
+      - { ResourceId: 0, Prob: 20 }
   - location:
-    number: 1
+    number: 54
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 7, Prob: 35 }
+      - { ResourceId: 8, Prob: 30 }
+      - { ResourceId: 10, Prob: 12 }
+      - { ResourceId: 0, Prob: 22 }
   - location:
-    number: 1
+    number: 55
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 8, Prob: 31 }
+      - { ResourceId: 7, Prob: 30 }
+      - { ResourceId: 10, Prob: 15 }
+      - { ResourceId: 0, Prob: 24 }
+    Extra: [ 13, 6, 9 ]
   - location:
-    number: 1
+    number: 56
+    oil: true
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 8, Prob: 32 }
+      - { ResourceId: 7, Prob: 25 }
+      - { ResourceId: 10, Prob: 17 }
+      - { ResourceId: 13, Prob: 11 }
+      - { ResourceId: 0, Prob: 13 }
   - location:
-    number: 1
+    number: 57
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 8, Prob: 34 }
+      - { ResourceId: 10, Prob: 20 }
+      - { ResourceId: 7, Prob: 19 }
+      - { ResourceId: 13, Prob: 13 }
+      - { ResourceId: 0, Prob: 12 }
+    Extra: [ 6, 9 ]
   - location:
-    number: 1
+    number: 58
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 8, Prob: 35 }
+      - { ResourceId: 10, Prob: 22 }
+      - { ResourceId: 7, Prob: 15 }
+      - { ResourceId: 13, Prob: 15 }
+      - { ResourceId: 0, Prob: 12 }
+    Extra: [ 6, 9 ]
   - location:
-    number: 1
+    number: 59
+    oil: true
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 8, Prob: 37 }
+      - { ResourceId: 10, Prob: 25 }
+      - { ResourceId: 13, Prob: 16 }
+      - { ResourceId: 0, Prob: 21 }
+    Extra: [ 7, 9, 6 ]
   - location:
-    number: 1
+    number: 60
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 8, Prob: 38 }
+      - { ResourceId: 10, Prob: 27 }
+      - { ResourceId: 13, Prob: 18 }
+      - { ResourceId: 0, Prob: 16 }
+    Extra: [ 9, 7, 6 ]
   - location:
-    number: 1
+    number: 61
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 8, Prob: 100 }
   - location:
-    number: 1
+    number: 62
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-  
+      - { ResourceId: 8, Prob: 70 }
+      - { ResourceId: 10, Prob: 30 }
   - location:
-    number: 1
+    number: 63
+    oil: true
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
-
+      - { ResourceId: 8, Prob: 33 }
+      - { ResourceId: 10, Prob: 31 }
+      - { ResourceId: 13, Prob: 16 }
+      - { ResourceId: 9, Prob: 13 }
+      - { ResourceId: 0, Prob: 5 }
   - location:
-    number: 1
+    number: 64
+    oil: true
     Partitions:
-      - { ResourceId: 1, Prob: 100 }
+      - { ResourceId: 10, Prob: 32 }
+      - { ResourceId: 8, Prob: 30 }
+      - { ResourceId: 13, Prob: 15 }
+      - { ResourceId: 9, Prob: 15 }
+      - { ResourceId: 0, Prob: 8 }
+  - location:
+    number: 65
+    Partitions:
+      - { ResourceId: 10, Prob: 33 }
+      - { ResourceId: 8, Prob: 26 }
+      - { ResourceId: 9, Prob: 16 }
+      - { ResourceId: 13, Prob: 13 }
+      - { ResourceId: 0, Prob: 10 }
