@@ -18,6 +18,19 @@ Resources:
   - { id: 15, name: Alexandrite }
   - { id: 16, name: Uranium }
   - { id: 17, name: Platinum }
+  - { id: 18, name: Obsidian }
+  - { id: 19, name: Helium-3 }
+
+Mines:
+  - { level: 1, speed: 3, volume: 40 }
+  - { level: 2, speed: 4, volume: 45 }
+  - { level: 3, speed: 5, volume: 50 }
+  - { level: 4, speed: 6, volume: 55 }
+  - { level: 5, speed: 8, volume: 70 }
+  - { level: 6, speed: 12, volume: 90 }
+  - { level: 7, speed: 15, volume: 120 }
+  - { level: 8, speed: 17, volume: 150 }
+  - { level: 9, speed: 20, volume: 170 }
 
 # Extra Checked: 1 - 68, 70 - 81
 
