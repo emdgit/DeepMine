@@ -10,6 +10,7 @@
 
 void read_schema(Schema &schema);
 void read_resources(Schema &schema, const YAML::Node &node);
+void read_mines(Schema &schema, const YAML::Node &node);
 
 using node_pair = std::pair<YAML::Node, YAML::Node>;
 
@@ -64,9 +65,15 @@ void read_schema(Schema &schema)
                     throw std::runtime_error("Invalid schema format. "
                                              "Resource section should be a sequence.");
                 }
+
                 read_resources(schema, p.second);
             } else if (p.first.Scalar() == "Mines") {
+                if (!p.second.IsSequence()) {
+                    throw std::runtime_error("Invalid schema format. "
+                                             "Mines section should be a sequence.");
+                }
 
+                read_mines(schema, p.second);
             } else if (p.first.Scalar() == "Locations") {
 
             } else {
@@ -80,6 +87,7 @@ void read_schema(Schema &schema)
 void read_resources(Schema &schema, const YAML::Node &node)
 {
     // node is a sequence
+
     for (const auto &it : node) {
         const YAML::Node &p = it;
         if (!p.IsMap() || p.size() != 2) {
@@ -104,9 +112,51 @@ void read_resources(Schema &schema, const YAML::Node &node)
                 res_id = atoi(res_pair.second.Scalar().data());
             } else if (res_pair.first.Scalar() == "name") {
                 res_name = res_pair.second.Scalar();
+            } else {
+                throw std::runtime_error("Invalid schema format. "
+                                         "Unexpected resource key");
             }
         }
 
         schema.addResource(res_id, res_name);
+    }
+}
+
+void read_mines(Schema &schema, const YAML::Node &node)
+{
+    // node is a sequence
+
+    for (const auto &it : node) {
+        const YAML::Node &p = it;
+        if (!p.IsMap() || p.size() != 3) {
+            throw std::runtime_error("Invalid schema format. "
+                                     "Each element of a mines section "
+                                     "should be a Map with size = 3.");
+        }
+
+        int mine_level, mine_speed, mine_volume;
+
+        for (const auto &res : p) {
+            const node_pair &res_pair = res;
+            if (!res_pair.first.IsScalar() ||
+                    !res_pair.second.IsScalar()) {
+                throw std::runtime_error("Invalid schema format. "
+                                         "Each element of a resource map "
+                                         "should be a pair of sclar / scalar");
+            }
+
+            if (res_pair.first.Scalar() == "level") {
+                mine_level = atoi(res_pair.second.Scalar().data());
+            } else if (res_pair.first.Scalar() == "speed") {
+                mine_speed = atoi(res_pair.second.Scalar().data());
+            } else if (res_pair.first.Scalar() == "volume") {
+                mine_volume = atoi(res_pair.second.Scalar().data());
+            } else {
+                throw std::runtime_error("Invalid schema format. "
+                                         "Unexpected mine's key");
+            }
+        }
+
+        schema.addMine(mine_level, mine_speed, mine_volume);
     }
 }
