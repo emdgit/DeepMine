@@ -16,6 +16,7 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick REQUIRED)
 
 set(PROJECT_SOURCES
         src/main.cpp
+        src/Schema.cpp
         qml.qrc
 )
 

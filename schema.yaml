@@ -32,7 +32,7 @@ Mines:
   - { level: 8, speed: 17, volume: 150 }
   - { level: 9, speed: 20, volume: 170 }
 
-# Extra Checked: 1 - 68, 70 - 81
+# Extra Checked: 1 - 84
 
 Locations:
 
@@ -618,7 +618,7 @@ Locations:
       - { ResourceId: 8, Prob: 13 }
       - { ResourceId: 0, Prob: 13 }
     Extra: [ 12, 13 ] 
-    ExtraRatio: "(4-10) (8-5) () () ()"
+    ExtraRatio: "(4-10) (8-5) (10-9) (10-11) (6-6)"
   - location:
     number: 70
     Partitions:
@@ -741,7 +741,7 @@ Locations:
       - { ResourceId: 14, Prob: 15 }
       - { ResourceId: 0, Prob: 32 }
     Extra: [ 9, 10, 11, 16, 17 ] 
-    ExtraRatio: "(15-13-5-11-4) (10-20-13-11-4) (15-10-8-16-5) (17-18-8-8-2) ()"
+    ExtraRatio: "(15-13-5-11-4) (10-20-13-11-4) (15-10-8-16-5) (17-18-8-8-2) (12-16-9-13-2)"
   - location:
     number: 83
     Partitions:
@@ -750,7 +750,7 @@ Locations:
       - { ResourceId: 14, Prob: 16 }
       - { ResourceId: 0, Prob: 26 }
     Extra: [ 9, 10, 11, 16, 17 ] 
-    ExtraRatio: "(7-11-5-5-4) (4-12-5-11-3) () () ()"
+    ExtraRatio: "(7-11-5-5-4) (4-12-5-11-3) (7-7-3-8-3) (6-8-3-11-3) (3-12-2-12-4)"
   - location:
     number: 84
     Partitions:
@@ -759,7 +759,7 @@ Locations:
       - { ResourceId: 14, Prob: 18 }
       - { ResourceId: 0, Prob: 19 }
     Extra: [ 9, 10, 11, 16, 17 ] 
-    ExtraRatio: "(5-6-5-16-4) (3-5-0-11-3) () () ()"
+    ExtraRatio: "(5-6-5-16-4) (3-5-0-11-3) (4-4-1-11-4) (2-4-1-12-3) (2-2-2-8-3)"
   - location:
     number: 85
     Partitions:
