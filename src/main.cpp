@@ -175,7 +175,7 @@ void read_locations(Schema &schema, const YAML::Node &node)
         }
 
         Schema::Location loc;
-        std::list<int> extra_ids;
+        std::vector<int> extra_ids;
         std::string extra_ratio;
 
         for (const auto &p : it) {

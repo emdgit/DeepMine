@@ -28,7 +28,7 @@ public:
         Location() = default;
 
         void addPartition(int resId, int prob);
-        void setExtra(std::list<int> &&ids,
+        void setExtra(std::vector<int> &&ids,
                       const std::string &ratio);
 
         int number;
