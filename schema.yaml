@@ -14,9 +14,25 @@ Resources:
   - { id: 11, name: Sapphire }
   - { id: 12, name: Amethyst }
   - { id: 13, name: Diamond }
+  - { id: 14, name: Titanium }
+  - { id: 15, name: Alexandrite }
+  - { id: 16, name: Uranium }
+  - { id: 17, name: Platinum }
+  - { id: 18, name: Obsidian }
+  - { id: 19, name: Helium-3 }
 
-# 1 - 7, 10, 11, 
-# Extra Checked: 1 - 11, 24 - 25, 36 - 39, 43 - 44, 49 - 52, 55, 57 - 62
+Mines:
+  - { level: 1, speed: 3, volume: 40 }
+  - { level: 2, speed: 4, volume: 45 }
+  - { level: 3, speed: 5, volume: 50 }
+  - { level: 4, speed: 6, volume: 55 }
+  - { level: 5, speed: 8, volume: 70 }
+  - { level: 6, speed: 12, volume: 90 }
+  - { level: 7, speed: 15, volume: 120 }
+  - { level: 8, speed: 17, volume: 150 }
+  - { level: 9, speed: 20, volume: 170 }
+
+# Extra Checked: 1 - 84
 
 Locations:
 
@@ -26,7 +42,7 @@ Locations:
       - { ResourceId: 1, Prob: 100 }
   - location:
     number: 2
-    Partitions: # 88 32
+    Partitions:
       - { ResourceId: 1, Prob: 70 }
       - { ResourceId: 2, Prob: 30 }
   - location:
@@ -35,30 +51,34 @@ Locations:
       - { ResourceId: 1, Prob: 59 }
       - { ResourceId: 2, Prob: 28 }
       - { ResourceId: 0, Prob: 12 }
-    Extra: [ 3, 4 ]
+    Extra: [ 3, 4, 7 ] 
+    ExtraRatio: "(10-3-1) (19-3-0) (7-2-2) (11-2-1) (14-2-0)"
   - location:
     number: 4
-    Partitions: # 70 35 14 1
+    Partitions: 
       - { ResourceId: 1, Prob: 54 }
       - { ResourceId: 2, Prob: 32 }
       - { ResourceId: 0, Prob: 13 }
-    Extra: [ 3, 4 ]
+    Extra: [ 3, 4, 7 ] 
+    ExtraRatio: "(14-1-0) (15-0-1) (13-5-1) (14-5-1) (8-4-0)"
   - location:
     number: 5
-    Partitions: # 61 41 14 Gold-2 Amber-2
+    Partitions:
       - { ResourceId: 1, Prob: 48 }
       - { ResourceId: 2, Prob: 36 }
       - { ResourceId: 3, Prob: 11 }
       - { ResourceId: 0, Prob: 3 }
-    Extra: [ 4, 7 ]
+    Extra: [ 4, 7 ] 
+    ExtraRatio: "(2-2) (4-1) (1-3) (0-2) (3-1)"
   - location:
     number: 6
-    Partitions: # 52 51 15 1 1
+    Partitions:
       - { ResourceId: 1, Prob: 43 }
       - { ResourceId: 2, Prob: 40 }
       - { ResourceId: 3, Prob: 12 }
       - { ResourceId: 0, Prob: 3 }
-    Extra: [ 4, 7 ]
+    Extra: [ 4, 7 ] 
+    ExtraRatio: "(1-1) (2-1) (3-2) (5-2) (3-1)"
   - location:
     number: 7
     Partitions: 
@@ -66,7 +86,8 @@ Locations:
       - { ResourceId: 1, Prob: 38 }
       - { ResourceId: 3, Prob: 13 }
       - { ResourceId: 0, Prob: 3 }
-    Extra: [ 4 ]
+    Extra: [ 4, 7 ] 
+    ExtraRatio: "(3-5) (0-1) (2-2) (3-2) (0-2)"
   - location:
     number: 8
     Partitions:
@@ -74,7 +95,8 @@ Locations:
       - { ResourceId: 1, Prob: 33 }
       - { ResourceId: 3, Prob: 14 }
       - { ResourceId: 0, Prob: 3 }
-    Extra: [ 4, 7 ]
+    Extra: [ 4, 7 ] 
+    ExtraRatio: "(3-2) (0-2) (2-1) (2-1) (1-1)"
   - location:
     number: 9
     Partitions:
@@ -82,7 +104,8 @@ Locations:
       - { ResourceId: 1, Prob: 27 }
       - { ResourceId: 3, Prob: 15 }
       - { ResourceId: 0, Prob: 3 }
-    Extra: [ 7 ]
+    Extra: [ 4, 7 ] 
+    ExtraRatio: "(1-4) (4-1) (2-4) (1-2) (1-4)"
   - location:
     number: 10
     Partitions:
@@ -90,7 +113,8 @@ Locations:
       - { ResourceId: 1, Prob: 22 }
       - { ResourceId: 3, Prob: 16 }
       - { ResourceId: 0, Prob: 3 }
-    Extra: [ 7 ]
+    Extra: [ 4, 7 ] 
+    ExtraRatio: "(1-1) (2-5) (0-4) (0-7) (3-3)"
   - location:
     number: 11
     Partitions:
@@ -98,7 +122,8 @@ Locations:
       - { ResourceId: 3, Prob: 17 }
       - { ResourceId: 1, Prob: 17 }
       - { ResourceId: 0, Prob: 3 }
-    Extra: [ 7 ]
+    Extra: [ 4, 7 ] 
+    ExtraRatio: "(1-1) (2-2) (0-4) (1-7) (0-2)"
   - location:
     number: 12
     Partitions:
@@ -106,7 +131,8 @@ Locations:
       - { ResourceId: 3, Prob: 18 }
       - { ResourceId: 1, Prob: 12 }
       - { ResourceId: 0, Prob: 3 }
-    Extra: [  ]
+    Extra: [ 7 ] 
+    ExtraRatio: "(4) (5) (5) (3) (4)"
   - location:
     number: 13
     Partitions:
@@ -122,6 +148,8 @@ Locations:
       - { ResourceId: 2, Prob: 58 }
       - { ResourceId: 3, Prob: 19 }
       - { ResourceId: 0, Prob: 22 }
+    Extra: [ 1, 4, 5, 6, 7 ] 
+    ExtraRatio: "(9-8-3-0-3) (11-18-1-2-2) (10-10-4-0-5) (5-11-0-0-3) (7-10-4-6-3)"
   - location:
     number: 16
     Partitions:
@@ -129,6 +157,8 @@ Locations:
       - { ResourceId: 3, Prob: 19 }
       - { ResourceId: 4, Prob: 15 }
       - { ResourceId: 0, Prob: 13 }
+    Extra: [ 1, 5, 6, 7 ] 
+    ExtraRatio: "(4-8-0-1) (3-3-1-2) (6-5-0-2) (1-7-1-4) (11-6-5-4)"
   - location:
     number: 17
     Partitions:
@@ -136,6 +166,8 @@ Locations:
       - { ResourceId: 4, Prob: 20 }
       - { ResourceId: 3, Prob: 19 }
       - { ResourceId: 0, Prob: 14 }
+    Extra: [ 1, 5, 6, 7 ] 
+    ExtraRatio: "(4-8-2-1) (7-8-0-2) (5-11-1-2) (8-12-2-3) (10-6-0-3)"
   - location:
     number: 18
     Partitions:
@@ -143,6 +175,8 @@ Locations:
       - { ResourceId: 4, Prob: 25 }
       - { ResourceId: 3, Prob: 18 }
       - { ResourceId: 0, Prob: 15 }
+    Extra: [ 1, 5, 6, 7 ] 
+    ExtraRatio: "(5-8-2-4) (4-9-0-1) (1-6-0-1) (5-11-1-6) (3-13-1-4)"
   - location:
     number: 19
     Partitions:
@@ -150,6 +184,8 @@ Locations:
       - { ResourceId: 4, Prob: 30 }
       - { ResourceId: 3, Prob: 18 }
       - { ResourceId: 0, Prob: 17 }
+    Extra: [ 1, 5, 6, 7 ] 
+    ExtraRatio: "(3-8-3-1) (4-13-1-2) (1-12-1-1) (6-14-2-2) (6-11-2-1)"
   - location:
     number: 20
     Partitions:
@@ -158,6 +194,8 @@ Locations:
       - { ResourceId: 3, Prob: 18 }
       - { ResourceId: 5, Prob: 11 }
       - { ResourceId: 0, Prob: 6 }
+    Extra: [ 1, 6, 7 ] 
+    ExtraRatio: "(3-3-2) (3-1-1) (0-3-3) (4-2-2) (0-4-5)"
   - location:
     number: 21
     Partitions:
@@ -166,6 +204,8 @@ Locations:
       - { ResourceId: 3, Prob: 18 }
       - { ResourceId: 5, Prob: 13 }
       - { ResourceId: 0, Prob: 5 }
+    Extra: [ 1, 6, 7 ] 
+    ExtraRatio: "(3-3-0) (2-1-1) (1-4-1) (5-4-1) (2-4-2)"
   - location:
     number: 22
     Partitions:
@@ -174,6 +214,8 @@ Locations:
       - { ResourceId: 2, Prob: 17 }
       - { ResourceId: 5, Prob: 15 }
       - { ResourceId: 0, Prob: 5 }
+    Extra: [ 1, 6, 7 ] 
+    ExtraRatio: "(3-0-1) (1-2-0) (4-1-1) (3-4-1) (4-4-0)"
   - location:
     number: 23
     Partitions:
@@ -182,6 +224,8 @@ Locations:
       - { ResourceId: 5, Prob: 16 }
       - { ResourceId: 2, Prob: 11 }
       - { ResourceId: 0, Prob: 4 }
+    Extra: [ 1, 6, 7 ] 
+    ExtraRatio: "(1-3-0) (3-4-0) (2-4-0) (2-3-0) (1-7-1)"
   - location:
     number: 24
     Partitions:
@@ -189,7 +233,8 @@ Locations:
       - { ResourceId: 5, Prob: 18 }
       - { ResourceId: 3, Prob: 17 }
       - { ResourceId: 0, Prob: 9 }
-    Extra: [ 2, 6, 7 ]
+    Extra: [ 1, 2, 6, 7 ] 
+    ExtraRatio: "(0-6-5-0) (0-9-4-0) (0-3-3-1) (1-9-4-0) (1-10-8-0)"
   - location:
     number: 25
     Partitions:
@@ -206,6 +251,8 @@ Locations:
       - { ResourceId: 5, Prob: 26 }
       - { ResourceId: 3, Prob: 19 }
       - { ResourceId: 0, Prob: 4 }
+    Extra: [ 6 ] 
+    ExtraRatio: "(9) (6) (9) (4) (10)"
   - location:
     number: 28
     Partitions:
@@ -213,6 +260,8 @@ Locations:
       - { ResourceId: 5, Prob: 30 }
       - { ResourceId: 3, Prob: 20 }
       - { ResourceId: 0, Prob: 5 }
+    Extra: [ 6 ] 
+    ExtraRatio: "(3) (9) (5) (10) (5)"
   - location:
     number: 29
     Partitions:
@@ -220,6 +269,8 @@ Locations:
       - { ResourceId: 5, Prob: 33 }
       - { ResourceId: 3, Prob: 21 }
       - { ResourceId: 0, Prob: 5 }
+    Extra: [ 6 ] 
+    ExtraRatio: "(6) (6) (14) (11) (7)"
   - location:
     number: 30
     Partitions:
@@ -227,6 +278,8 @@ Locations:
       - { ResourceId: 4, Prob: 35 }
       - { ResourceId: 3, Prob: 22 }
       - { ResourceId: 0, Prob: 6 }
+    Extra: [ 6 ] 
+    ExtraRatio: "(12) (13) (14) (4) (7)"
   - location:
     number: 31
     Partitions:
@@ -234,6 +287,8 @@ Locations:
       - { ResourceId: 4, Prob: 30 }
       - { ResourceId: 3, Prob: 23 }
       - { ResourceId: 0, Prob: 6 }
+    Extra: [ 6 ] 
+    ExtraRatio: "(7) (10) (9) (7) (8)"
   - location:
     number: 32
     Partitions:
@@ -241,6 +296,8 @@ Locations:
       - { ResourceId: 4, Prob: 25 }
       - { ResourceId: 3, Prob: 24 }
       - { ResourceId: 0, Prob: 7 }
+    Extra: [ 6 ] 
+    ExtraRatio: "(6) (12) (10) (9) (11)"
   - location:
     number: 33
     Partitions:
@@ -248,6 +305,8 @@ Locations:
       - { ResourceId: 3, Prob: 25 }
       - { ResourceId: 4, Prob: 19 }
       - { ResourceId: 0, Prob: 8 }
+    Extra: [ 6 ] 
+    ExtraRatio: "(13) (13) (10) (9) (10)"
   - location:
     number: 34
     Partitions:
@@ -255,19 +314,24 @@ Locations:
       - { ResourceId: 3, Prob: 26 }
       - { ResourceId: 4, Prob: 15 }
       - { ResourceId: 0, Prob: 8 }
+    Extra: [ 6 ] 
+    ExtraRatio: "(9) (11) (11) (12) (11)"
   - location:
     number: 35
     Partitions:
       - { ResourceId: 5, Prob: 53 }
       - { ResourceId: 3, Prob: 27 }
       - { ResourceId: 0, Prob: 19 }
+    Extra: [ 4, 6 ] 
+    ExtraRatio: "(15-13) (16-21) (19-11) (14-15) (11-14)"
   - location:
     number: 36
     Partitions:
       - { ResourceId: 5, Prob: 56 }
       - { ResourceId: 3, Prob: 28 }
       - { ResourceId: 0, Prob: 14 }
-    Extra: [ 4, 6 ]
+    Extra: [ 4, 6 ] 
+    ExtraRatio: "(5-11) (5-8) (7-15) (7-15) (5-19)"
   - location:
     number: 37
     Partitions:
@@ -284,7 +348,8 @@ Locations:
       - { ResourceId: 3, Prob: 25 }
       - { ResourceId: 6, Prob: 11 }
       - { ResourceId: 0, Prob: 14 }
-    Extra: [ 7, 8 ]
+    Extra: [ 7, 8 ] 
+    ExtraRatio: "(17-5) (16-4) (9-3) (13-3) (12-4)"
   - location:
     number: 40
     Partitions:
@@ -293,6 +358,8 @@ Locations:
       - { ResourceId: 7, Prob: 15 }
       - { ResourceId: 6, Prob: 11 }
       - { ResourceId: 0, Prob: 6 }
+    Extra: [ 8 ] 
+    ExtraRatio: "(8) (6) (4) (8) (6)"
   - location:
     number: 41
     Partitions:
@@ -301,6 +368,8 @@ Locations:
       - { ResourceId: 3, Prob: 20 }
       - { ResourceId: 6, Prob: 12 }
       - { ResourceId: 0, Prob: 8 }
+    Extra: [ 8 ] 
+    ExtraRatio: "(19) (20) (13) (10) (11)"
   - location:
     number: 42
     Partitions:
@@ -309,6 +378,8 @@ Locations:
       - { ResourceId: 3, Prob: 17 }
       - { ResourceId: 6, Prob: 12 }
       - { ResourceId: 0, Prob: 10 }
+    Extra: [ 8 ] 
+    ExtraRatio: "(13) (8) (16) (16) (17)"
   - location:
     number: 43
     Partitions:
@@ -333,6 +404,8 @@ Locations:
       - { ResourceId: 8, Prob: 15 }
       - { ResourceId: 6, Prob: 14 }
       - { ResourceId: 0, Prob: 10 }
+    Extra: [ 3 ] 
+    ExtraRatio: "(16) (8) (12) (12) (14)"
   - location:
     number: 46
     Partitions:
@@ -341,6 +414,8 @@ Locations:
       - { ResourceId: 6, Prob: 15 }
       - { ResourceId: 5, Prob: 15 }
       - { ResourceId: 0, Prob: 8 }
+    Extra: [ 3 ] 
+    ExtraRatio: "(8) (9) (12) (8) (8)"
   - location:
     number: 47
     Partitions:
@@ -348,6 +423,8 @@ Locations:
       - { ResourceId: 8, Prob: 19 }
       - { ResourceId: 6, Prob: 15 }
       - { ResourceId: 0, Prob: 15 }
+    Extra: [ 3, 5 ] 
+    ExtraRatio: "(7-15) (6-8) (6-16) (8-18) (9-16)"
   - location:
     number: 48
     Partitions:
@@ -355,6 +432,8 @@ Locations:
       - { ResourceId: 8, Prob: 21 }
       - { ResourceId: 6, Prob: 16 }
       - { ResourceId: 0, Prob: 8 }
+    Extra: [ 3, 5 ] 
+    ExtraRatio: "(0-9) (3-5) (2-4) (3-8) (0-6)"
   - location:
     number: 49
     Partitions:
@@ -371,7 +450,8 @@ Locations:
       - { ResourceId: 8, Prob: 25 }
       - { ResourceId: 6, Prob: 14 }
       - { ResourceId: 0, Prob: 10 }
-    Extra: [ 9, 10, 13 ]
+    Extra: [ 9, 10, 13 ] 
+    ExtraRatio: "(5-5-6) (4-10-3) (2-6-3) (0-8-5) (2-8-4)"
   - location:
     number: 52
     Partitions:
@@ -379,7 +459,8 @@ Locations:
       - { ResourceId: 8, Prob: 27 }
       - { ResourceId: 6, Prob: 12 }
       - { ResourceId: 0, Prob: 15 }
-    Extra: [ 10, 13, 9 ]
+    Extra: [ 9, 10, 13 ] 
+    ExtraRatio: "(1-6-4) (3-14-7) (3-9-6) (3-11-1) (3-8-5)"
   - location:
     number: 53
     Partitions:
@@ -387,6 +468,8 @@ Locations:
       - { ResourceId: 8, Prob: 28 }
       - { ResourceId: 6, Prob: 11 }
       - { ResourceId: 0, Prob: 20 }
+    Extra: [ 9, 10, 13 ] 
+    ExtraRatio: "(5-12-8) (4-13-8) (5-11-6) (1-10-10) (2-14-5)"
   - location:
     number: 54
     Partitions:
@@ -394,6 +477,8 @@ Locations:
       - { ResourceId: 8, Prob: 30 }
       - { ResourceId: 10, Prob: 12 }
       - { ResourceId: 0, Prob: 22 }
+    Extra: [ 6, 9, 13 ] 
+    ExtraRatio: "(9-8-8) (12-5-10) (8-0-8) (10-6-5) (16-3-11)"
   - location:
     number: 55
     Partitions:
@@ -401,7 +486,8 @@ Locations:
       - { ResourceId: 7, Prob: 30 }
       - { ResourceId: 10, Prob: 15 }
       - { ResourceId: 0, Prob: 24 }
-    Extra: [ 13, 6, 9 ]
+    Extra: [ 6, 9, 13 ] 
+    ExtraRatio: "(11-5-7) (12-3-17) (10-8-9) (8-6-14) (10-7-13)"
   - location:
     number: 56
     oil: true
@@ -411,6 +497,8 @@ Locations:
       - { ResourceId: 10, Prob: 17 }
       - { ResourceId: 13, Prob: 11 }
       - { ResourceId: 0, Prob: 13 }
+    Extra: [ 6, 9 ] 
+    ExtraRatio: "(10-9) (9-8) (7-11) (9-6) (12-16)"
   - location:
     number: 57
     Partitions:
@@ -419,7 +507,8 @@ Locations:
       - { ResourceId: 7, Prob: 19 }
       - { ResourceId: 13, Prob: 13 }
       - { ResourceId: 0, Prob: 12 }
-    Extra: [ 6, 9 ]
+    Extra: [ 6, 9 ] 
+    ExtraRatio: "(6-9) (8-9) (6-8) (7-6) (5-15)"
   - location:
     number: 58
     Partitions:
@@ -428,7 +517,8 @@ Locations:
       - { ResourceId: 7, Prob: 15 }
       - { ResourceId: 13, Prob: 15 }
       - { ResourceId: 0, Prob: 12 }
-    Extra: [ 6, 9 ]
+    Extra: [ 6, 9 ] 
+    ExtraRatio: "(5-11) (8-3) (7-9) (3-7) (0-5)"
   - location:
     number: 59
     oil: true
@@ -437,7 +527,8 @@ Locations:
       - { ResourceId: 10, Prob: 25 }
       - { ResourceId: 13, Prob: 16 }
       - { ResourceId: 0, Prob: 21 }
-    Extra: [ 7, 9, 6 ]
+    Extra: [ 6, 7, 9 ] 
+    ExtraRatio: "(13-4-9) (2-19-13) (3-11-10) (9-12-6) (7-12-12)"
   - location:
     number: 60
     Partitions:
@@ -445,7 +536,8 @@ Locations:
       - { ResourceId: 10, Prob: 27 }
       - { ResourceId: 13, Prob: 18 }
       - { ResourceId: 0, Prob: 16 }
-    Extra: [ 9, 7, 6 ]
+    Extra: [ 6, 7, 9 ] 
+    ExtraRatio: "(1-5-15) (5-6-10) (1-5-10) (1-5-12) (1-7-9)"
   - location:
     number: 61
     Partitions:
@@ -464,6 +556,8 @@ Locations:
       - { ResourceId: 13, Prob: 16 }
       - { ResourceId: 9, Prob: 13 }
       - { ResourceId: 0, Prob: 5 }
+    Extra: [ 11, 12 ] 
+    ExtraRatio: "(8-3) (3-1) (3-2) (6-2) (9-3)"
   - location:
     number: 64
     oil: true
@@ -473,6 +567,8 @@ Locations:
       - { ResourceId: 13, Prob: 15 }
       - { ResourceId: 9, Prob: 15 }
       - { ResourceId: 0, Prob: 8 }
+    Extra: [ 11, 12 ] 
+    ExtraRatio: "(5-6) (3-2) (3-3) (5-4) (6-2)"
   - location:
     number: 65
     Partitions:
@@ -481,3 +577,194 @@ Locations:
       - { ResourceId: 9, Prob: 16 }
       - { ResourceId: 13, Prob: 13 }
       - { ResourceId: 0, Prob: 10 }
+    Extra: [ 11, 12 ] 
+    ExtraRatio: "(4-7) (10-2) (8-4) (0-9) (5-1)"
+  - location:
+    number: 66
+    Partitions:
+      - { ResourceId: 10, Prob: 34 }
+      - { ResourceId: 8, Prob: 23 }
+      - { ResourceId: 9, Prob: 18 }
+      - { ResourceId: 13, Prob: 11 }
+      - { ResourceId: 0, Prob: 13 }
+    Extra: [ 11, 12 ] 
+    ExtraRatio: "(9-3) (13-5) (15-5) (8-3) (12-4)"
+  - location:
+    number: 67
+    Partitions:
+      - { ResourceId: 10, Prob: 34 }
+      - { ResourceId: 9, Prob: 23 }
+      - { ResourceId: 8, Prob: 18 }
+      - { ResourceId: 0, Prob: 25 }
+    Extra: [ 11, 12, 13 ] 
+    ExtraRatio: "(9-4-12) (15-10-17) (16-11-16) (19-5-20) (16-10-12)"
+  - location:
+    number: 68
+    Partitions:
+      - { ResourceId: 10, Prob: 35 }
+      - { ResourceId: 9, Prob: 21 }
+      - { ResourceId: 8, Prob: 16 }
+      - { ResourceId: 11, Prob: 11 }
+      - { ResourceId: 0, Prob: 14 }
+    Extra: [ 12, 13 ] 
+    ExtraRatio: "(5-7) (4-12) (7-9) (8-8) (10-14)"
+  - location:
+    number: 69
+    oil: true
+    Partitions:
+      - { ResourceId: 10, Prob: 36 }
+      - { ResourceId: 9, Prob: 23 }
+      - { ResourceId: 11, Prob: 13 }
+      - { ResourceId: 8, Prob: 13 }
+      - { ResourceId: 0, Prob: 13 }
+    Extra: [ 12, 13 ] 
+    ExtraRatio: "(4-10) (8-5) (10-9) (10-11) (6-6)"
+  - location:
+    number: 70
+    Partitions:
+      - { ResourceId: 10, Prob: 37 }
+      - { ResourceId: 9, Prob: 25 }
+      - { ResourceId: 11, Prob: 15 }
+      - { ResourceId: 0, Prob: 23 }
+    Extra: [ 8, 12, 13 ] 
+    ExtraRatio: "(15-8-7) (13-9-4) (13-7-4) (8-9-13) (15-9-10)"
+  - location:
+    number: 71
+    Partitions:
+      - { ResourceId: 10, Prob: 38 }
+      - { ResourceId: 9, Prob: 26 }
+      - { ResourceId: 11, Prob: 16 }
+      - { ResourceId: 0, Prob: 18 }
+    Extra: [ 8, 12, 13 ] 
+    ExtraRatio: "(6-8-6) (7-13-3) (8-7-3) (9-13-6) (10-12-4)"
+  - location:
+    number: 72
+    Partitions:
+      - { ResourceId: 10, Prob: 39 }
+      - { ResourceId: 9, Prob: 28 }
+      - { ResourceId: 11, Prob: 18 }
+      - { ResourceId: 0, Prob: 14 }
+    Extra: [ 8, 12, 13 ] 
+    ExtraRatio: "(3-11-2) (4-13-2) (6-10-1) (4-10-2) (6-9-3)"
+  - location:
+    number: 73
+    Partitions:
+      - { ResourceId: 10, Prob: 100 }
+  - location:
+    number: 74
+    Partitions:
+      - { ResourceId: 10, Prob: 70 }
+      - { ResourceId: 9, Prob: 30 }
+  - location:
+    number: 75
+    Partitions:
+      - { ResourceId: 10, Prob: 33 }
+      - { ResourceId: 9, Prob: 25 }
+      - { ResourceId: 11, Prob: 16 }
+      - { ResourceId: 12, Prob: 15 }
+      - { ResourceId: 0, Prob: 10 }
+    Extra: [ 14, 15, 16, 17 ] 
+    ExtraRatio: "(4-8-3-1) (3-5-1-0) (4-6-0-0) (9-3-2-0) (3-5-3-1)"
+  - location:
+    number: 76
+    oil: true
+    Partitions:
+      - { ResourceId: 10, Prob: 30 }
+      - { ResourceId: 9, Prob: 22 }
+      - { ResourceId: 12, Prob: 17 }
+      - { ResourceId: 11, Prob: 15 }
+      - { ResourceId: 0, Prob: 15 }
+    Extra: [ 14, 15, 16, 17 ] 
+    ExtraRatio: "(7-8-0-1) (7-9-2-0) (4-11-4-1) (5-7-2-3) (4-12-1-0)"
+  - location:
+    number: 77
+    oil: true
+    Partitions:
+      - { ResourceId: 10, Prob: 26 }
+      - { ResourceId: 12, Prob: 20 }
+      - { ResourceId: 9, Prob: 20 }
+      - { ResourceId: 11, Prob: 13 }
+      - { ResourceId: 0, Prob: 20 }
+    Extra: [ 14, 15, 16, 17 ] 
+    ExtraRatio: "(7-10-4-2) (7-12-3-2) (11-15-3-0) (10-9-6-0) (13-8-5-0)"
+  - location:
+    number: 78
+    oil: true
+    Partitions:
+      - { ResourceId: 10, Prob: 23 }
+      - { ResourceId: 12, Prob: 22 }
+      - { ResourceId: 9, Prob: 17 }
+      - { ResourceId: 11, Prob: 11 }
+      - { ResourceId: 15, Prob: 11 }
+      - { ResourceId: 0, Prob: 14 }
+    Extra: [ 14, 16, 17 ] 
+    ExtraRatio: "(13-7-0) (11-5-2) (16-7-0) (15-7-1) (11-7-3)"
+  - location:
+    number: 79
+    oil: true
+    Partitions:
+      - { ResourceId: 12, Prob: 25 }
+      - { ResourceId: 10, Prob: 20 }
+      - { ResourceId: 9, Prob: 15 }
+      - { ResourceId: 15, Prob: 13 }
+      - { ResourceId: 0, Prob: 27 }
+    Extra: [ 11, 14, 16, 17 ] 
+    ExtraRatio: "(19-15-4-7) (16-16-6-2) (16-14-10-3) (21-14-7-0) (9-18-4-4)"
+  - location:
+    number: 80
+    oil: true
+    Partitions:
+      - { ResourceId: 12, Prob: 27 }
+      - { ResourceId: 10, Prob: 16 }
+      - { ResourceId: 15, Prob: 15 }
+      - { ResourceId: 9, Prob: 12 }
+      - { ResourceId: 14, Prob: 11 }
+      - { ResourceId: 0, Prob: 16 }
+    Extra: [ 11, 16, 17 ] 
+    ExtraRatio: "(12-10-0) (14-9-3) (11-7-3) (8-7-0) (14-7-1)"
+  - location:
+    number: 81
+    Partitions:
+      - { ResourceId: 12, Prob: 30 }
+      - { ResourceId: 15, Prob: 18 }
+      - { ResourceId: 14, Prob: 13 }
+      - { ResourceId: 10, Prob: 13 }
+      - { ResourceId: 0, Prob: 25 }
+    Extra: [ 9, 11, 16, 17 ] 
+    ExtraRatio: "(15-14-10-3) (15-8-12-3) (16-9-10-3) (12-10-7-2) (17-10-14-4)"
+  - location:
+    number: 82
+    oil: true
+    Partitions:
+      - { ResourceId: 12, Prob: 32 }
+      - { ResourceId: 15, Prob: 20 }
+      - { ResourceId: 14, Prob: 15 }
+      - { ResourceId: 0, Prob: 32 }
+    Extra: [ 9, 10, 11, 16, 17 ] 
+    ExtraRatio: "(15-13-5-11-4) (10-20-13-11-4) (15-10-8-16-5) (17-18-8-8-2) (12-16-9-13-2)"
+  - location:
+    number: 83
+    Partitions:
+      - { ResourceId: 12, Prob: 35 }
+      - { ResourceId: 15, Prob: 22 }
+      - { ResourceId: 14, Prob: 16 }
+      - { ResourceId: 0, Prob: 26 }
+    Extra: [ 9, 10, 11, 16, 17 ] 
+    ExtraRatio: "(7-11-5-5-4) (4-12-5-11-3) (7-7-3-8-3) (6-8-3-11-3) (3-12-2-12-4)"
+  - location:
+    number: 84
+    Partitions:
+      - { ResourceId: 12, Prob: 37 }
+      - { ResourceId: 15, Prob: 24 }
+      - { ResourceId: 14, Prob: 18 }
+      - { ResourceId: 0, Prob: 19 }
+    Extra: [ 9, 10, 11, 16, 17 ] 
+    ExtraRatio: "(5-6-5-16-4) (3-5-0-11-3) (4-4-1-11-4) (2-4-1-12-3) (2-2-2-8-3)"
+  - location:
+    number: 85
+    Partitions:
+      - { ResourceId: 10, Prob: 38 }
+    Extra: [  ] 
+    ExtraRatio: "() () () () ()"
+    
+  
