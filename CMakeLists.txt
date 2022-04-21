@@ -18,13 +18,18 @@ set(PROJECT_SOURCES
         src/main.cpp
         src/Schema.cpp
         qml.qrc
+        img.qrc
+)
+
+set(PROJECT_HEADERS
+    src/Schema.h
 )
 
 add_subdirectory(src/third_party/yaml-cpp)
 
 set(YAML_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src/third_party/yaml-cpp/include")
 
-add_executable(DeepCalc ${PROJECT_SOURCES})
+add_executable(DeepCalc ${PROJECT_SOURCES} ${PROJECT_HEADERS})
 
 target_include_directories(DeepCalc PUBLIC ${YAML_INCLUDE_DIR})
 
