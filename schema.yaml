@@ -1,25 +1,25 @@
 ---
 Resources:
   - { id: 0, name: "Any" }
-  - { id: 1, name: Coal }
-  - { id: 2, name: Copper }
-  - { id: 3, name: Iron }
-  - { id: 4, name: Amber }
-  - { id: 5, name: Aluminum }
-  - { id: 6, name: Silver }
-  - { id: 7, name: Gold }
-  - { id: 8, name: Emerald }
-  - { id: 9, name: Topaz }
-  - { id: 10, name: Ruby }
-  - { id: 11, name: Sapphire }
-  - { id: 12, name: Amethyst }
-  - { id: 13, name: Diamond }
-  - { id: 14, name: Titanium }
-  - { id: 15, name: Alexandrite }
-  - { id: 16, name: Uranium }
-  - { id: 17, name: Platinum }
-  - { id: 18, name: Obsidian }
-  - { id: 19, name: Helium-3 }
+  - { id: 1, name: Coal, img: "coal.png" }
+  - { id: 2, name: Copper, img: "copper.png" }
+  - { id: 3, name: Iron, img: "iron.png" }
+  - { id: 4, name: Amber, img: "amber.png" }
+  - { id: 5, name: Aluminum, img: "alluminum.png" }
+  - { id: 6, name: Silver, img: "silver.png" }
+  - { id: 7, name: Gold, img: "gold.png" }
+  - { id: 8, name: Emerald, img: "emerald.png" }
+  - { id: 9, name: Topaz, img: "topaz.png" }
+  - { id: 10, name: Ruby, img: "ruby.png" }
+  - { id: 11, name: Sapphire, img: "sapphire.png" }
+  - { id: 12, name: Amethyst, img: "amethist.png" }
+  - { id: 13, name: Diamond, img: "diamond.png" }
+  - { id: 14, name: Titanium, img: "titan.png" }
+  - { id: 15, name: Alexandrite, img: "alexandrit.png" }
+  - { id: 16, name: Uranium, img: "uranus.png" }
+  - { id: 17, name: Platinum, img: "platina.png" }
+  - { id: 18, name: Obsidian, img: "obsidian.png" }
+  - { id: 19, name: Helium-3, img: "hellium_3.png" }
 
 Mines:
   - { level: 1, speed: 3, volume: 40 }
